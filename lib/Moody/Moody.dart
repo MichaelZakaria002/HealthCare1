@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz1/Moody/Moody_Widgets/SliderWindow.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import 'ExerciseScreens/Relaxation.dart';
+
 class Moody extends StatefulWidget {
   static String routeName = 'moody';
 
@@ -177,28 +179,36 @@ class _MoodyState extends State<Moody> {
             Row(
               children: [
                 ExerciseText(
+                    nextRoute: Relaxation.routeName,
                     buttonText: 'Relaxation',
                     buttonColor: const Color(0xFFF9F5FF),
-                    buttonAsset: 'assets/Vector.png'),
+                    buttonAsset: 'assets/Vector.png'
+                ),
                 SizedBox(width: MediaQuery.of(context).size.width * .05),
                 ExerciseText(
+                    nextRoute: Relaxation.routeName,
                     buttonText: 'Meditation',
                     buttonColor: const Color(0xFFFDF2FA),
-                    buttonAsset: 'assets/Group.png'),
+                    buttonAsset: 'assets/Group.png'
+                ),
               ],
             ),
             SizedBox(height: MediaQuery.of(context).size.height * .01),
             Row(
               children: [
                 ExerciseText(
+                    nextRoute: Relaxation.routeName,
                     buttonText: 'Beathing',
                     buttonColor: const Color(0xFFFFFAF5),
-                    buttonAsset: 'assets/Frame (1).png'),
+                    buttonAsset: 'assets/Frame (1).png'
+                ),
                 SizedBox(width: MediaQuery.of(context).size.width * .05),
                 ExerciseText(
+                    nextRoute: Relaxation.routeName,
                     buttonText: 'Yoga',
                     buttonColor: const Color(0xFFF0F9FF),
-                    buttonAsset: 'assets/Group (1).png'),
+                    buttonAsset: 'assets/Group (1).png'
+                ),
               ],
             )
           ],

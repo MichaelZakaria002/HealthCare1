@@ -4,6 +4,7 @@ import 'package:quiz1/Home.dart';
 import 'package:quiz1/Moody/Moody.dart';
 import 'package:quiz1/SplashScreen.dart';
 import 'package:quiz1/Workout/Workout.dart';
+import 'Moody/ExerciseScreens/Relaxation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
           WorkoutApp.routeName: (_) => WorkoutApp(),
           AliceCare.routeName: (_) => WorkoutApp(),
           HomeScreen.routeName: (_) => HomeScreen(),
-          SplashScreen.routeName: (_) => SplashScreen()
+          SplashScreen.routeName: (_) => SplashScreen(),
+          Relaxation.routeName: (_) => Relaxation(),
         },
         initialRoute: SplashScreen.routeName
     );

@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Add a delay to simulate the splash screen
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 4), () {
       // Navigate to the home screen after the splash screen duration
       Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
     });
@@ -28,8 +28,8 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.ice_skating_outlined), // Display your app logo or any other image
-            SizedBox(height: 20),
+            Icon(Icons.ac_unit_outlined,size: 150), // Display your app logo or any other image
+            SizedBox(height: MediaQuery.of(context).size.height * .2),
             CircularProgressIndicator(), // Show a loading indicator
           ],
         ),
